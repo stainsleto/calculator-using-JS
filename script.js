@@ -3,7 +3,7 @@ function printSymbol(e){
     let obj = e.target;
     result.textContent = result.textContent + obj.textContent;
 }
-
+let result = document.getElementById("result");
 let num1 = document.getElementById("num1");
 let num2 = document.getElementById("num2");
 let num3 = document.getElementById("num3");
@@ -41,5 +41,11 @@ multiplication.addEventListener("click",printSymbol);
 division.addEventListener("click",printSymbol);
 decimal.addEventListener("click",printSymbol);
 
+// evaluation for equal sign 
+
+equal.addEventListener("click", () => result.textContent = eval(result.textContent));
+
+
+// to clear eveyrthing 
 clear.addEventListener("click", ()=> document.getElementById("result").textContent = 0);
 
