@@ -1,8 +1,25 @@
 function printSymbol(e){
     let result = document.getElementById("result");
     let obj = e.target;
-    result.textContent = result.textContent + obj.textContent;
+    result.value = result.value + obj.textContent;
 }
+
+// clicked object is 0 or not 
+
+function printDigit(e){
+    let result = document.getElementById("result");
+    let obj = e.target;
+    if (result.value == 0){
+        result.value = obj.textContent;
+    }
+    else{
+        result.value = result.value + obj.textContent;
+    }
+    
+}
+
+
+
 let result = document.getElementById("result");
 let num1 = document.getElementById("num1");
 let num2 = document.getElementById("num2");
@@ -24,16 +41,16 @@ let decimal = document.getElementById("decimal");
 let equal = document.getElementById("equal");
 let clear = document.getElementById("clear");
 //numbers
-num1.addEventListener("click", printSymbol);
-num2.addEventListener("click", printSymbol);
-num3.addEventListener("click", printSymbol);
-num4.addEventListener("click", printSymbol);
-num5.addEventListener("click", printSymbol);
-num6.addEventListener("click", printSymbol);
-num7.addEventListener("click", printSymbol);
-num8.addEventListener("click", printSymbol);
-num9.addEventListener("click", printSymbol);
-num0.addEventListener("click", printSymbol);
+num1.addEventListener("click", printDigit);
+num2.addEventListener("click", printDigit);
+num3.addEventListener("click", printDigit);
+num4.addEventListener("click", printDigit);
+num5.addEventListener("click", printDigit);
+num6.addEventListener("click", printDigit);
+num7.addEventListener("click", printDigit);
+num8.addEventListener("click", printDigit);
+num9.addEventListener("click", printDigit);
+num0.addEventListener("click", printDigit);
 // signs
 subtraction.addEventListener("click",printSymbol);
 addition.addEventListener("click",printSymbol);
@@ -43,9 +60,9 @@ decimal.addEventListener("click",printSymbol);
 
 // evaluation for equal sign 
 
-equal.addEventListener("click", () => result.textContent = eval(result.textContent));
+equal.addEventListener("click", () => result.value = eval(result.value));
 
 
 // to clear eveyrthing 
-clear.addEventListener("click", ()=> document.getElementById("result").textContent = 0);
+clear.addEventListener("click", ()=> document.getElementById("result").value = 0);
 
