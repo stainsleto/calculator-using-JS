@@ -40,6 +40,8 @@ let division = document.getElementById("division");
 let decimal = document.getElementById("decimal");
 let equal = document.getElementById("equal");
 let clear = document.getElementById("clear");
+let rightp = document.getElementById("rightp");
+let leftp = document.getElementById("leftp");
 //numbers
 num1.addEventListener("click", printDigit);
 num2.addEventListener("click", printDigit);
@@ -57,6 +59,8 @@ addition.addEventListener("click",printSymbol);
 multiplication.addEventListener("click",printSymbol);
 division.addEventListener("click",printSymbol);
 decimal.addEventListener("click",printSymbol);
+leftp.addEventListener("click", printSymbol);
+rightp.addEventListener("click",printSymbol);
 
 // evaluation for equal sign 
 
