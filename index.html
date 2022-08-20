@@ -10,43 +10,43 @@
 <body>
     <script src="../calculator/script.js" defer></script>
     <h1>Calculator</h1>
-    <table border = 1>
+    <table>
         <tr>
-            <td colspan="4" align="right">
+            <td colspan="4" id="result-box">
                 <input type="textbox" id="result" width="200px" value="0">
             </td>
         </tr>
         <tr>
-            <td align="center" width="30px" height="30px" id="clear">AC</td>
-            <td align="center" width="30px" id="leftp" >(</td>
-            <td align="center" width="30px" id="rightp">)</td>
-            <td align="center" width="30px" height="30px" id="division">/</td>
+            <td id="clear">AC</td>
+            <td class="symbol" id="leftp" >(</td>
+            <td class="symbol" id="rightp">)</td>
+            <td class="symbol" id="division">/</td>
         </tr>
 
         <tr>
-            <td align="center" height="30px" id="num7">7</td>
-            <td align="center" id="num8">8</td>
-            <td align="center" id="num9">9</td>
-            <td align="center" id="multiplication">*</td>
+            <td class="symbol" id="num7">7</td>
+            <td class="symbol" id="num8">8</td>
+            <td class="symbol" id="num9">9</td>
+            <td class="symbol" id="multiplication">*</td>
         </tr>
 
         <tr>
-            <td align="center" height="30px" id="num4">4</td>
-            <td align="center" id="num5">5</td>
-            <td align="center" id="num6">6</td>
-            <td align="center" id="subtraction">-</td>
+            <td class="symbol" id="num4">4</td>
+            <td class="symbol" id="num5">5</td>
+            <td class="symbol" id="num6">6</td>
+            <td class="symbol" id="subtraction">-</td>
         </tr>
 
         <tr>
-            <td align="center" height="30px" id="num1">1</td>
-            <td align="center" id="num2">2</td>
-            <td align="center" id="num3">3</td>
-            <td align="center" id="addition">+</td>
+            <td class="symbol" id="num1">1</td>
+            <td class="symbol" id="num2">2</td>
+            <td class="symbol" id="num3">3</td>
+            <td class="symbol" id="addition">+</td>
         </tr>
         <tr>
-            <td colspan="2" id="num0">0</td>
-            <td align="center" id="decimal">.</td>
-            <td align="center" id="equal">=</td>
+            <td class="symbol" colspan="2" id="num0">0</td>
+            <td class="symbol" id="decimal">.</td>
+            <td id="equal">=</td>
         </tr>
     </table>
     

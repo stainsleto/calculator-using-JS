@@ -1,3 +1,29 @@
 *{
     padding:5px;
 }
+
+.symbol{
+    text-align: center;
+    width: 30px;
+    height:30px;
+}
+
+table{
+    border: 1px solid;
+}
+
+td{
+    border:1px solid;
+}
+
+#result-box{
+    text-align:right;
+}
+
+#equal {
+    text-align:center;
+}
+
+#clear{
+    text-align:center;
+}
