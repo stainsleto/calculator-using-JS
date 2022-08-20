@@ -16,6 +16,10 @@ td{
     border:1px solid;
 }
 
+td:hover{
+    cursor:pointer;
+}
+
 #result-box{
     text-align:right;
 }
